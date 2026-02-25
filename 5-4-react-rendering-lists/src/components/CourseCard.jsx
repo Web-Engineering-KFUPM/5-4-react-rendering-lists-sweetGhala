@@ -32,7 +32,7 @@ export default function CourseCard({ course, index, onMutateCourse }) {
         <h2>{course.title}</h2>
           {allDone && <span className="badge">All caught up</span>}
         {/* TODO (TASK 3): Show “All caught up” badge ONLY when:
-            - course has tasks AND
+            - course has tasks AN
             - all tasks are done
             Use logical && */}
       </header>
