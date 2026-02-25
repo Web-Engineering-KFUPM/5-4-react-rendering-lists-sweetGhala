@@ -16,10 +16,19 @@ export default function TaskItem({ task, onToggle, onDelete }) {
         {/* TODO (TASK 2): Display the task title
             Example:
               <span className="title">{task.title}</span> */}
+          <input
+              type="checkbox"
+              checked={task.isDone}
+              onChange={() => onToggle(task.id)}
+          />
+
+          {!task.isDone && <DueBadge dueDate={task.dueDate} />}
+
+          <span className="title">{task.title}</span>
       </label>
 
       {/* TODO (TASK 4): Delete button calls onDelete(task.id) on click */}
-      <button className="ghost" aria-label="Delete task">
+      <button className="ghost" aria-label="Delete task" onClick={() => onDelete(task.id)}>
         ✕
       </button>
     </li>
