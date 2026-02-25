@@ -11,7 +11,7 @@ function daysUntil(dateStr) {
 export default function DueBadge({ dueDate }) {
   /* =========================================================
      TASK 3 — Simple Conditional Rendering (ONLY && in other files)
-     --------------------------------------------------------
+     ---------------------------------------------------------
      GOAL:
      Show one label based on daysUntil(dueDate):
 
